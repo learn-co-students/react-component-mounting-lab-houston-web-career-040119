@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Timer from './Timer'
 import { runInThisContext } from 'vm';
+import { stat } from 'fs';
 
 class App extends Component {
 
@@ -13,7 +14,9 @@ class App extends Component {
 
   //Your code here:
   componentDidMount() {
-    this.handleAddTimer()
+    // if(this.state.timerIDs === []) {
+      this.handleAddTimer()
+    // } 
   }
 
 
